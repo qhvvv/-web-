@@ -114,12 +114,10 @@
       const password = document.getElementById('password').value.trim();
       const captcha = document.getElementById('captcha').value.trim();
       const error = document.getElementById('error');
-
-      // 设定固定账号密码和验证码
       if (username === "user" && password === "123456" && captcha === "ABCD") {
-        window.location.href = "./main.html"; // 登录成功跳转
+        window.location.href = "/-web-/main.html";
       } else {
-        error.style.display = "block"; // 显示错误信息
+        error.style.display = "block"; 
       }
     }
   </script>
